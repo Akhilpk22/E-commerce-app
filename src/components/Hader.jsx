@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 function Hader() {
   const Wishlist = useSelector((state) => state.wishListReducer);
 
+  const Cart = useSelector((state)=>state.cartReducer);
+
   return (
     <Navbar
       expand="lg"
@@ -44,7 +46,7 @@ function Hader() {
                 style={{ textDecoration: "none", fontWeight: "bold" }}
               >
                 <i class="fa-solid text-warning fa-cart-shopping me-2"></i>Cart{" "}
-                <Badge className="ms-2 rounded  me-2">10</Badge>
+                <Badge className="ms-2 rounded  me-2">{Cart.length}</Badge>
               </Link>
             </Nav.Link>
           </Nav>

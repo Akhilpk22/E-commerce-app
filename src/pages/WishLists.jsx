@@ -42,8 +42,9 @@ function WishLists() {
         </Col>
           )):
           <div  style={{height:"60vh"}} className=' w-100 d-flex flex-column justify-content-center align-items-center '>
-            <h3 className='te'> you WishList is empty!!!</h3>
-            <Link style={{textDecoration:'none'}} className='mt-3' to={'/'}>back to home</Link>
+            
+            <h3 style={{fontSize:'40px'}} className='te'> you WishList is empty!!!</h3>
+            <Link style={{textDecoration:'none'}} className='mt-3 shadow-lg,' to={'/'}>back to home</Link>
           </div>
         }
       </Row>
