@@ -1,16 +1,12 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
-import WishListSlice from "./Slice/WishListSlice";
-import cartSlice from "./Slice/cartSlice";
-
-// this store will be provide 
+import { configureStore } from "@reduxjs/toolkit";
+import wishlistSlice from "./slices/wishlistSlice";
+import cartSlice from "./slices/cartSlice";
 
 const store = configureStore({
-    // when reducer 
-    reducer:{
-        // the wishlistreducer  reducer will called 
-       wishListReducer:WishListSlice,
-       cartReducer:cartSlice
-
+    reducer : {
+        wishlistReducer:wishlistSlice ,
+        cartReducer:cartSlice
     }
 })
+
 export default store;
